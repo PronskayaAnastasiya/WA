@@ -73,9 +73,8 @@ function displayForecast(response) {
       <h6>
         ${formatHours(forecast.dt * 1000)}
       </h6>
-      <img src="http://openweathermap.org/img/wn/${
-        forecast.weather[0].icon
-      }@2x.png" alt="${forecast.weather[0].description}" height="75" />
+      <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon
+        }@2x.png" alt="${forecast.weather[0].description}" height="75" />
       <div>
         <strong><span class="max-temp">${maxTempForecast}</span></strong><span class="forecast-unit unit">ºC</span> <span class="min-temp">${minTempForecast}</span><span class="forecast-unit unit">ºC</span>
       </div>
@@ -87,15 +86,14 @@ function displayForecast(response) {
       <h6>
         ${formatHours(forecast.dt * 1000)}
       </h6>
-      <img src="http://openweathermap.org/img/wn/${
-        forecast.weather[0].icon
-      }@2x.png" alt="${forecast.weather[0].description}" height="75" />
+      <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon
+        }@2x.png" alt="${forecast.weather[0].description}" height="75" />
       <div>
         <strong><span class="max-temp">${Math.round(
           maxTempForecast * 1.8 + 32
         )}</span></strong><span class="forecast-unit unit">ºF</span> <span class="min-temp">${Math.round(
-        minTempForecast * 1.8 + 32
-      )}</span><span class="forecast-unit unit">ºF</span>
+          minTempForecast * 1.8 + 32
+        )}</span><span class="forecast-unit unit">ºF</span>
       </div>
       </div>
     `;
@@ -246,4 +244,4 @@ let celsiusCurrentTemp = null;
 
 let defaultUnit = document.querySelector(".active-unit");
 
-search("Porto");
+search("Minsk");
